@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Order</title>
+	<link href="styles.css" rel="stylesheet" />
+	<link href="responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		
+		<div class="navbar">
+			<img src="cheech2.png" alt="#" />
+			<h3>Cheech's Pizza</h3>
+		</div>
+		
+		<nav>
+			<ul id="navcontainer">
+				<li id="navli"><a href="#">Home</a></li>
+				<li id="navli"><a href="order.html">Order Online</a></li>
+				<li id="navli"><a href="menu.html">Menu</a></li>
+				<li id="navli"><a href="#">Our Location</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article>
+		
+		<div class="ordercontainer">
+		
+			<div class="col1">
+			
+				<form id="wholeform">
+					<fieldset id="formcol1">
+					<legend>Your Order</legend>
+						<div class="formRow">
+							<label for="firstname">First Name*</label>
+							<input name="FName" id="firstname" type="text" placeholder="first name" required />
+						</div>
+						
+						<div class="formRow">
+							<label for="lastname">Last Name*</label>
+							<input name="LName" id="lastname" type="text" placeholder="last name" required />
+						</div>
+						
+						<div class="formRow">
+							<label for="phone">Phone Number</label>
+							<input name="cPhone" id="phone" type="tel" placeholder="(###) ###-####"
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+						</div>
+				  
+						<div class="formRow">
+							<label for="pizza">Select Your Pizza</label>
+							<select name="sPizza" id="pizza">
+								<option value="Cheese">Cheese</option>
+								<option value="Pepperoni">Pepperoni </option>
+								<option value="Sausage">Sausage</option>
+								<option value="BBQ Chicken">BBQ Chicken</option>
+								<option value="Hawaiian">Hawaiian</option>
+								<option value="Margherita">Margherita</option>
+							</select>
+						</div>
+				  
+						<div class="formRow">
+							<label for="howmany">How Many Pizzas?</label>
+							<input name="pizzanum" id="howmany" type="number"
+							value="1" step="1" min="1" max="5" />
+						</div>
+				  
+					</fieldset>
+				
+					<div id="buttons">
+						<input type="submit" value="Place Order" />
+					</div>
+					
+				</form>
+			</div>
+		
+			<div class="col2">
+			
+				<div class="sub1">
+					<h4>Critic Review</h4>
+					<p>“They don't skimp on the toppings and their Margherita slice is awesome!”</p>
+					<p>“The slices had a perfect cheese & sauce ratio and I loved how thin and crispy they were.”</p>
+				</div>
+					
+				<div class="sub2">
+					<h4>Customer's Experience</h4>
+					<p>“The homemade pasta and buttery sauce was also incredible, though I didn't taste the sage.” </p>
+					<p>“The flavors were definitely unique; the crusts were crispy; the burrata definitely adds a burst of smoky flavor.”</p>
+				</div>
+					
+				<div class="sub3">
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</article>
+
+</body>
+
+</html>
